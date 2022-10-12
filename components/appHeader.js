@@ -5,7 +5,8 @@ import { useFonts } from 'expo-font';
 
 
 
-function AppBar() {
+
+function AppBar(props) {
     const [fontsLoaded, setFontsLoaded] =React.useState(false)
     [fontsLoaded] = useFonts({
         "Comforter":require('../assets/fonts/ComforterBrush-Regular.ttf'),
@@ -20,7 +21,8 @@ function AppBar() {
     return (
         <View>
             <Appbar.Header style={{ backgroundColor: 'purple' }}>
-                <Appbar.Content style={{ alignItems:'center' }} title={<Text style={{ color: 'white',fontFamily:'Pacifico-Regular',fontSize:20,flex:1}}>NpRental Mobile</Text>} />
+            <Appbar.Action icon="home" color='white' onPress={() => {}} onLongPress={props.infoVisible} />
+                <Appbar.Content style={{  }} title={<Text style={{ color: 'white',fontFamily:'Pacifico-Regular',fontSize:20,flex:1}}>NpRental Mobile</Text>} />
             </Appbar.Header>
 
         </View>
