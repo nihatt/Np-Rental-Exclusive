@@ -25,7 +25,7 @@ function WhyUsCard(props) {
     </View>
     
     <View>
-        <Text style={{fontSize:32,textAlign:'center',fontFamily:'Staatliches-Regular'}}>{props.text}</Text>
+        <Text style={{fontSize:32,textAlign:'center',fontFamily:'Staatliches-Regular',color:'white'}}>{props.text}</Text>
     </View>
 </View>
   );

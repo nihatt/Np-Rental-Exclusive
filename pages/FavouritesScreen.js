@@ -10,7 +10,7 @@ function FavouritesScreen() {
   return (
 <View>
 <AppBar></AppBar>
-    <Text>favoriler</Text>
+    <Text>{global.myVar[0] + global.myVar[1]+global.myVar[2]}</Text>
 </View>
   );
 }
